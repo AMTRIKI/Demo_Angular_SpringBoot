@@ -1,0 +1,8 @@
+<h2>Accès à un Backend (Ici Spring Boot)</h2>
+<form #f="ngForm">
+    <label>Donnez une chaîne à envoyer au backend</label> <br>
+    <input type="text" #txt>
+    <button (click)="envoyer(txt.value)">Afficher</button>
+</form>
+<h3> Affichage du message à partir du backend</h3>
+<p *ngIf="message">{{message.message}}</p>
